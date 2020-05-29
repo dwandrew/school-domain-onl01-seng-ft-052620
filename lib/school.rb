@@ -21,7 +21,8 @@ end
 
 def sort
   sorted ={}
-  @roster.each{|grade, students| {grade => students.sort}}
+  @roster.each{|grade, students| sorted[grade] = students.sort}
+  sorted
 end  
 
 end
