@@ -20,7 +20,7 @@ def grade(grade)
 end
 
 def sort
-  @roster.map{|grade, students| grade => students.sort}
+  @roster.map{|grade, students| {grade => students.sort}}
 end  
 
 end
